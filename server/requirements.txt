@@ -3,19 +3,19 @@ fastapi
 uvicorn[standard]
 python-multipart
 
-# LangChain & Ecosystem
+#LangChain & Ecosystem
 langchain
 langchain-community
 langchain-core
 langchain-groq
 
-# Vectorstore
-# chromadb
+Vectorstore
+chromadb
 pinecone
 
 # Embeddings
-# sentence-transformers
-# langchain-google-generative-ai
+sentence-transformers
+langchain-google-generative-ai
 langchain-google-genai
 
 # PDF Parsing

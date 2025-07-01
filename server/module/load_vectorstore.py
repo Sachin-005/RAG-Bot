@@ -36,7 +36,7 @@ def load_vectorstore(uploaded_files):
     if os.path.exists(PERSIST_DIR) and os.listdir(PERSIST_DIR):
         vectorstore=Chroma(persist_directory=PERSIST_DIR, embedding_function=embeddings)
         vectorstore.add_documents(texts)
-        vectorstore.persist()
+        vectorstore.persist() 
 
     else:
         vectorstore=Chroma.from_documents(
