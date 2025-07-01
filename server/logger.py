@@ -15,6 +15,8 @@ def setup_logger(name="ragbot"):
     formatter = logging.Formatter("%(asctime)s] [%(levelname)s] - %(message)s")
     ch.setFormatter(formatter)
 
+    #Handle duplicate logger
+    
     if not logger.hashHandlers():
         logger.addHandler(ch)
 
