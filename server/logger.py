@@ -16,8 +16,8 @@ def setup_logger(name="ragbot"):
     ch.setFormatter(formatter)
 
     #Handle duplicate logger
-    
-    if not logger.hashHandlers():
+
+    if not logger.hasHandlers():
         logger.addHandler(ch)
 
     return logger 
